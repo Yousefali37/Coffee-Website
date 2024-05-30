@@ -1,0 +1,266 @@
+.topnav1 {
+  background-color: none;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav1 a {
+  float: right;
+  color: #f2f2f2;
+  font-family:"Raleway", sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav1 a.active {
+  background-color:burlywood;
+  color: white;
+}
+html{
+  scroll-behavior:smooth;
+}
+html::-webkit-scrollbar{
+  width: .008rem;
+}
+html::-webkit-scrollbar-track{
+  background:transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background:#fff;
+  border-radius: 5rem;
+}
+  *{
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:burlywood;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:burlywood;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 0px;
+    background: linear-gradient(to left, #161616, #000000);
+    padding: 10px;
+    color: #ccc;
+    width:auto;
+    height: min-content;
+    -webkit-box-shadow: 9px 13px 25px 0px transparent;
+    -moz-box-shadow: 9px 13px 25px 0px transparent;
+    box-shadow: 9px 13px 25px 0px transparent;
+    animation: slideUp 2000ms ease;
+  }
+
+  @keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+
+    }
+}
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  body{
+    background: linear-gradient(to left, #161616, #000000)
+  }
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+button {
+  font-family: inherit;
+  font-size: 15px;
+  background: burlywood;
+  color: black;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  margin-bottom: 1.0rem ;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+
+ul{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    font-size: 23px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.instagram{
+    border: 2px solid #ff0095;
+    color: #c72b7e;
+}
+
+.twitter{
+    border: 2px solid #1c9ff1;
+    color: #1c9ff1;
+}
+
+.facebook{
+    border: 2px solid #0679e6;
+    color: #0679e6;
+}
+
+
+/* #####################  Hover EFFECTS ############################# */
+
+a {
+  color:  #c72b7e;
+}
+
+.icon{
+    transition: 0.6s;
+}
+
+li:hover .icon1{
+    transform: rotateY(360deg);
+    text-shadow: 0px 0px 1px #ff0095;
+}
+
+li:hover .icon2{
+    transform: rotateY(360deg);
+    text-shadow: 0px 0px 1px #1c9ff1;
+}
+
+li:hover .icon4{
+    transform: rotateY(360deg);
+    text-shadow: 0px 0px 1px #0679e6;
+}
+
+li{
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}
+
+.instagram:hover{
+    box-shadow: 0px 0px 7px #ff0095 inset,
+                0px 0px 7px #ff0095;
+}
+
+.twitter:hover{
+    box-shadow: 0px 0px 7px #1c9ff1 inset,
+                0px 0px 7px #1c9ff1;
+}
+
+.facebook:hover{
+    box-shadow: 0px 0px 7px #0679e6 inset,
+                0px 0px 7px #0679e6;
+}
+footer {
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+p.copyright {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  line-height: 40px;
+  font-size: 0.9em;
+  text-align: center;
+  bottom:0; 
+}
